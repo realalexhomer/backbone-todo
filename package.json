@@ -1,0 +1,20 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "todo.js",
+  "scripts": {
+    "test": "???",
+    "start": "node server.js"
+  },
+  "author": "Alex Homer",
+  "license": "MIT",
+  "devDependencies": {
+    "connect-livereload": "^0.5.3"
+  },
+  "dependencies": {
+    "express-handlebars": "^2.0.1",
+    "express": "^4.12.3",
+    "mongoose": "^4.0.2"
+  }
+}
