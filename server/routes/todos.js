@@ -18,7 +18,6 @@ module.exports = function(router){
     });
   });
 
-
 router.route('/todos/:todo_id')
   
   .get(function(req, res) {
