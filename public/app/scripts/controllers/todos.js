@@ -5,3 +5,5 @@ completed: false
 });
 console.log(test);
 test.save()
+
+// test.destroy();

@@ -27,4 +27,13 @@ router.route('/todos/:todo_id')
       })
   
   })
+
+  .delete(function(req, res) { // not working yet
+      Todo.findOneAndRemove(req.params.todo_id, function(err, todo){
+        if (err) res.send(err);
+        res.send('Todo successfully deleted.')
+      })
+
+  })
+
 };

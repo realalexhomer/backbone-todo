@@ -23,7 +23,26 @@ var app = app || {};
 
     url: '/api/todos'
 
+    
+
   });
+
+  var TodoCollection = Backbone.Collection.extend({
+    url: '/api/todos',
+    model: app.Todo,
+
+    done: function(){
+      return this.where({done: true});
+    },
+
+    remaining: function() {
+      return this.where({done: false});
+    }
+});
+
+
+  app.Todos = new TodoCollection;
+
 
 
 })();
