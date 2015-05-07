@@ -42,7 +42,7 @@ var app = app || {};
 
 
   app.Todos = new TodoCollection;
-
+  app.Todos.fetch();
 
 
 })();
